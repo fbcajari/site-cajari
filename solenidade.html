@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAJARI</title>
+    <link rel="shortcut icon" href="images/ampulheta-no-meu-tempo-32x32.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/carrossel.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/prefeitos.css">
+</head>
+
+<body>
+
+<nav class="navbar" aria-label="Menu principal">
+    <div class="menu-container">
+        <!-- Botão para celular -->
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="menu-principal">
+            <span class="icone-menu">&#9776;</span>
+            <span class="texto-menu">Menu</span>
+        </button>
+        <!-- Itens do menu -->
+        <div class="menu" id="menu-principal">
+            <a href="index.html" class="menu-link">Início</a>
+            <div class="menu-item">
+                <button class="submenu-toggle"
+                        type="button"
+                        aria-expanded="false">
+                    Sobre Cajari <span class="seta">▾</span>
+                </button>
+                <div class="submenu">
+                    <a href="historico.html">Histórico</a>
+                    <a href="ata-de-instalacao.html">Ata de Instalação</a>
+                    <a href="formacao-administrativa.html">Formação Administrativa</a>
+                    <a href="perfil-ibge.html">Perfil do Município IBGE</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <button class="submenu-toggle"
+                        type="button"
+                        aria-expanded="false">
+                    Personalidades <span class="seta">▾</span>
+                </button>
+                <div class="submenu">
+                    <a href="solenidade.html">Solenidade</a>
+                    <a href="prefeitos.html">Prefeitos</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <button class="submenu-toggle"
+                        type="button"
+                        aria-expanded="false">
+                    Lendas <span class="seta">▾</span>
+                </button>
+                <div class="submenu">
+                    <a href="lenda-maracu.html">A lenda do Rio Maracú</a>
+                    <a href="lenda-baiano.html">A lenda do Igarapé do Baiano</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <button class="submenu-toggle"
+                        type="button"
+                        aria-expanded="false">
+                    Sobre a eletiva <span class="seta">▾</span>
+                </button>
+                <div class="submenu">
+                    <a href="ementa.html">Ementa</a>
+                    <a href="projeto.html">Projeto</a>
+                </div>
+            </div>
+            <a href="desenvolvedores.html" class="menu-link">Desenvolvedores</a>
+        </div>
+    </div>
+</nav>
+
+<section class="carrossel" aria-label="Galeria de Cajari">
+    <div class="slide ativo">
+        <img src="images/no-meu-tempo-1600x600.png"
+             alt="Arte conceitual da eletiva No meu tempo">
+    </div>
+    <div class="slide">
+        <img src="images/camisa-no-meu-tempo-full.png"
+             alt="Camisa temática da eletiva No meu tempo">
+    </div>
+    <div class="slide">
+        <img src="images/cais-cajari.jpg"
+             alt="Imagem do cais de Cajari na segunda gestão de Nascimento Almeida">
+    </div>
+    <div class="slide">
+        <img src="images/pm-cajari.jpg"
+             alt="Imagem do cais de Cajari na segunda gestão de Bento Sousa">
+    </div>
+    <button class="controle anterior"
+            type="button"
+            aria-label="Imagem anterior">&#10094;
+    </button>
+    <button class="controle proximo"
+            type="button"
+            aria-label="Próxima imagem">&#10095;
+    </button>
+    <div class="indicadores" aria-label="Escolher imagem">
+        <button class="indicador ativo" aria-label="Imagem 1"></button>
+        <button class="indicador" aria-label="Imagem 2"></button>
+        <button class="indicador" aria-label="Imagem 3"></button>
+        <button class="indicador" aria-label="Imagem 4"></button>
+    </div>
+</section>
+
+    <main id="inicio">
+       
+        <!-- SEÇÃO: PREFEITOS DE CAJARI -->
+        <section class="secao-prefeitos">
+
+            <!-- Apresentação da seção -->
+            <div class="introducao-prefeitos">
+
+                <div class="icone-prefeitos" aria-hidden="true">
+                    👥
+                </div>
+
+                <div class="texto-introducao-prefeitos">
+                    <h1>Personalidades</h1>
+
+                    <p>
+                        <strong>Conheça</strong> a trajetória de todos os protagonistas
+                        que contribuíram para a história do nosso município.
+                        Cada personalidade deixou sua marca no desenvolvimento de Cajari,
+                        e suas histórias fazem parte da nossa memória coletiva.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Grade de prefeitos -->
+            <div class="grade-prefeitos">
+
+                <!-- Dr. José Lucas de Sousa Rangel -->
+                <article class="cartao-prefeito">
+                    <img src="images/avatar-full.png"
+                        alt="Retrato de Dr. José Lucas de Sousa Rangel">
+
+                    <div class="dados-prefeito">
+                        <h2>Dr. José Lucas de Sousa Rangel</h2>
+                        <p>Juiz de Direito que presidiu a solenidade e instalou o município</p>
+
+                        <a href="jose-lucas-sousa-rangel.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Raimundo Francisco da Cunha -->
+                <article class="cartao-prefeito">
+                    <img src="images/avatar-full.png"
+                        alt="Retrato de Raimundo Francisco da Cunha">
+
+                    <div class="dados-prefeito">
+                        <h2>Raimundo Francisco da Cunha</h2>
+                        <p>Escrivão; também nomeado tabelião de notas e anexos</p>
+
+                        <a href="raimundo-cunha.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Olívio Castelo Branco -->
+                <article class="cartao-prefeito">
+                    <img src="images/avatar-full.png"
+                        alt="Retrato de Olívio Castelo Branco">
+
+                    <div class="dados-prefeito">
+                        <h2>Olívio Castelo Branco</h2>
+                        <p>Discursou na solenidade</p>
+
+                        <a href="olivio-castelo-branco.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Pe. Eider Furtado da Silva -->
+                <article class="cartao-prefeito">
+                    <img src="images/avatar-full.png"
+                        alt="Retrato de Pe. Eider Furtado da Silva">
+
+                    <div class="dados-prefeito">
+                        <h2>Pe. Eider Furtado da Silva</h2>
+                        <p>Padre que discursou e mencionou a nomeação do irmão para prefeito</p>
+
+                        <a href="pe-eider.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Manoel Clodomir Serejo -->
+                <article class="cartao-prefeito">
+                    <img src="images/avatar-full.png"
+                        alt="Retrato de Manoel Clodomir Serejo">
+
+                    <div class="dados-prefeito">
+                        <h2>Manoel Clodomir Serejo</h2>
+                        <p>Líder político local mencionado nos discursos</p>
+
+                        <a href="mimi-serejo.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Vitorino Freire -->
+                <article class="cartao-prefeito">
+                    <img src="images/personalidades/solenidade/senador-vitorino-freire-full.jpg"
+                        alt="Retrato de Vitorino Freire">
+
+                    <div class="dados-prefeito">
+                        <h2>Vitorino Freire</h2>
+                        <p>Senador</p>
+
+                        <a href="vitorino-freire.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Sebastião Archer da Silva -->
+                <article class="cartao-prefeito">
+                    <img src="images/personalidades/solenidade/coronel-sebastiao-archer-da-silva-full.png"
+                        alt="Retrato de Sebastião Ache da Silva">
+
+                    <div class="dados-prefeito">
+                        <h2>Sebastião Archer da Silva</h2>
+                        <p>Governador do Estado</p>
+
+                        <a href="sebastiao-archer.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Afonso Matos -->
+                <article class="cartao-prefeito">
+                    <img src="images/avatar-full.png"
+                        alt="Retrato de Afonso Matos">
+
+                    <div class="dados-prefeito">
+                        <h2>Afonso Matos</h2>
+                        <p>Deputado Federal</p>
+
+                        <a href="afonso-matos.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Eurico Gaspar Dutra -->
+                <article class="cartao-prefeito">
+                    <img src="images/personalidades/solenidade/eurico-gaspar-dutra-full.png"
+                        alt="Retrato de Eurico Gaspar Dutra">
+
+                    <div class="dados-prefeito">
+                        <h2>Eurico Gaspar Dutra</h2>
+                        <p>Chefe da Nação</p>
+
+                        <a href="eurico-gaspar-dutra.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Alfredo Dualibe -->
+                <article class="cartao-prefeito">
+                    <img src="images/avatar-full.png"
+                        alt="Retrato de Alfredo Dualibe">
+
+                    <div class="dados-prefeito">
+                        <h2>Alfredo Dualibe</h2>
+                        <p>Secretário Estadual dos Negócios do Interior, Justiça e Segurança</p>
+
+                        <a href="alfredo-duailibe.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Benedito Furtado da Silva -->
+                <article class="cartao-prefeito">
+                    <img src="images/avatar-full.png"
+                        alt="Retrato de Benedito Furtado da Silva">
+
+                    <div class="dados-prefeito">
+                        <h2>Benedito Furtado da Silva</h2>
+                        <p>Primeiro prefeito municipal nomeado e empossado</p>
+
+                        <a href="benedito-furtado.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Álvaro Pereira Rêgo -->
+                <article class="cartao-prefeito">
+                    <img src="images/avatar-full.png"
+                        alt="Retrato de Álvaro Pereira Rêgo">
+
+                    <div class="dados-prefeito">
+                        <h2>Álvaro Pereira Rêgo</h2>
+                        <p>Primeiro suplente de Juiz</p>
+
+                        <a href="alvaro-pereira-rego.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Marcelino Trancoso -->
+                <article class="cartao-prefeito">
+                    <img src="images/avatar-full.png"
+                        alt="Retrato de Marcelino Trancoso">
+
+                    <div class="dados-prefeito">
+                        <h2>Marcelino Trancoso</h2>
+                        <p>Adjunto de Promotor Público</p>
+
+                        <a href="marcelino-trancoso.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Valdir Mendonça -->
+                <article class="cartao-prefeito">
+                    <img src="images/personalidades/solenidade/valdir-mendonca.png"
+                        alt="Retrato de Valdir Mendonça">
+
+                    <div class="dados-prefeito">
+                        <h2>Valdir Mendonça</h2>
+                        <p>Oficial de Justiça</p>
+
+                        <a href="valdir-mendonça.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Amanso Corrêa Pinto -->
+                <article class="cartao-prefeito">
+                    <img src="images/avatar-full.png"
+                        alt="Retrato de Amanso Corrêa Pinto">
+
+                    <div class="dados-prefeito">
+                        <h2>Amanso Corrêa Pinto</h2>
+                        <p>Subdelegado de Boa Vista do Pindaré</p>
+
+                        <a href="amanso-correa-pinto.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+    <script src=" js/menu.js"></script>
+    
+    <script src="js/carrossel.js"></script>
+    
+<footer class="rodape">
+    <div class="rodape-container">
+
+        <div class="rodape-titulo">
+            <h2>Apoiadores do Projeto:</h2>
+        </div>
+
+        <div class="lista-apoiadores">
+
+            <!-- Apoiador 1 -->
+            <div class="apoiador">
+                <img src="img/logo-prefeitura.png"
+                     alt="Logo da Prefeitura">
+                <span>Prefeitura Municipal</span>
+            </div>
+
+            <!-- Apoiador 2 -->
+            <div class="apoiador">
+                <img src="img/logo-instituicao.png"
+                     alt="Logo da instituição">
+                <span>Nome da Instituição</span>
+            </div>
+
+            <!-- Apoiador 3 -->
+            <div class="apoiador">
+                <img src="img/logo-empresa.png"
+                     alt="Logo da empresa">
+                <span>Nome da Empresa</span>
+            </div>
+
+        </div>
+    
+            <div class="rodape-titulo">
+            <p style="text-align: center;">
+                A eletiva de base <strong>"No meu tempo..."</strong> agradece a todos os colaboradores e apoiadores desse projeto que é de todos os cajarienses.
+            </p>
+        </div>
+
+        <div class="rodape-creditos">
+            <p style="text-align: center;">
+                © 2026 SITE CAJARI — Todos os direitos reservados.
+            </p>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>

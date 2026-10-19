@@ -1,0 +1,181 @@
+
+/* ========================================
+   ESTRUTURA DA ÁREA BIOGRÁFICA
+   SITE CAJARI
+======================================== */
+
+/* Área principal: perfil à esquerda e biografia à direita */
+.conteudo-biografia {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 20px;
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px auto;
+
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.20);
+
+    align-items: start;
+}
+
+
+/* ========================================
+   COLUNA ESQUERDA: PERFIL DO PREFEITO
+======================================== */
+
+/* FOTO DO PREFEITO */
+
+.perfil-prefeito .foto-prefeito {
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.perfil-prefeito .foto-prefeito img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 8px;
+}
+
+
+/* ========================================
+   COLUNA DIREITA: TEXTO BIOGRÁFICO
+======================================== */
+
+.texto-biografia {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+
+    padding: 5px 10px;
+}
+
+
+/* ========================================
+   NAVEGAÇÃO ENTRE PREFEITOS
+======================================== */
+
+.navegacao-prefeitos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px auto;
+
+    background-color: #e8f3ff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Links dos prefeitos */
+.navegacao-prefeitos a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    max-width: 48%;
+    padding: 10px;
+
+    color: #2439a5;
+    text-decoration: none;
+    border-radius: 8px;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.navegacao-prefeitos a:hover {
+    background-color: #d3e8ff;
+    color: #15142b;
+}
+
+/* Textos dos links */
+.navegacao-prefeitos strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.navegacao-prefeitos p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Setas de navegação */
+.navegacao-prefeitos span {
+    flex-shrink: 0;
+    font-size: 1.5rem;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+/* Tablets */
+@media (max-width: 800px) {
+    .conteudo-biografia {
+        grid-template-columns: 240px minmax(0, 1fr);
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .texto-biografia {
+        padding: 5px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .conteudo-biografia {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .perfil-prefeito,
+    .texto-biografia {
+        width: 100%;
+    }
+
+    .navegacao-prefeitos {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .navegacao-prefeitos a {
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .navegacao-prefeitos .proximo-prefeito {
+        justify-content: flex-end;
+        text-align: right;
+    }
+}

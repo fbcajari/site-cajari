@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAJARI</title>
+    <link rel="shortcut icon" href="images/ampulheta-no-meu-tempo-32x32.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/carrossel.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/prefeitos.css">
+</head>
+
+<body>
+
+<nav class="navbar" aria-label="Menu principal">
+    <div class="menu-container">
+        <!-- Botão para celular -->
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="menu-principal">
+            <span class="icone-menu">&#9776;</span>
+            <span class="texto-menu">Menu</span>
+        </button>
+        <!-- Itens do menu -->
+        <div class="menu" id="menu-principal">
+            <a href="index.html" class="menu-link">Início</a>
+            <div class="menu-item">
+                <button class="submenu-toggle"
+                        type="button"
+                        aria-expanded="false">
+                    Sobre Cajari <span class="seta">▾</span>
+                </button>
+                <div class="submenu">
+                    <a href="historico.html">Histórico</a>
+                    <a href="ata-de-instalacao.html">Ata de Instalação</a>
+                    <a href="formacao-administrativa.html">Formação Administrativa</a>
+                    <a href="perfil-ibge.html">Perfil do Município IBGE</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <button class="submenu-toggle"
+                        type="button"
+                        aria-expanded="false">
+                    Personalidades <span class="seta">▾</span>
+                </button>
+                <div class="submenu">
+                    <a href="solenidade.html">Solenidade</a>
+                    <a href="prefeitos.html">Prefeitos</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <button class="submenu-toggle"
+                        type="button"
+                        aria-expanded="false">
+                    Lendas <span class="seta">▾</span>
+                </button>
+                <div class="submenu">
+                    <a href="lenda-maracu.html">A lenda do Rio Maracú</a>
+                    <a href="lenda-baiano.html">A lenda do Igarapé do Baiano</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <button class="submenu-toggle"
+                        type="button"
+                        aria-expanded="false">
+                    Sobre a eletiva <span class="seta">▾</span>
+                </button>
+                <div class="submenu">
+                    <a href="ementa.html">Ementa</a>
+                    <a href="projeto.html">Projeto</a>
+                </div>
+            </div>
+            <a href="desenvolvedores.html" class="menu-link">Desenvolvedores</a>
+        </div>
+    </div>
+</nav>
+
+<section class="carrossel" aria-label="Galeria de Cajari">
+    <div class="slide ativo">
+        <img src="images/no-meu-tempo-1600x600.png"
+             alt="Arte conceitual da eletiva No meu tempo">
+    </div>
+    <div class="slide">
+        <img src="images/camisa-no-meu-tempo-full.png"
+             alt="Camisa temática da eletiva No meu tempo">
+    </div>
+    <div class="slide">
+        <img src="images/cais-cajari.jpg"
+             alt="Imagem do cais de Cajari na segunda gestão de Nascimento Almeida">
+    </div>
+    <div class="slide">
+        <img src="images/pm-cajari.jpg"
+             alt="Imagem do cais de Cajari na segunda gestão de Bento Sousa">
+    </div>
+    <button class="controle anterior"
+            type="button"
+            aria-label="Imagem anterior">&#10094;
+    </button>
+    <button class="controle proximo"
+            type="button"
+            aria-label="Próxima imagem">&#10095;
+    </button>
+    <div class="indicadores" aria-label="Escolher imagem">
+        <button class="indicador ativo" aria-label="Imagem 1"></button>
+        <button class="indicador" aria-label="Imagem 2"></button>
+        <button class="indicador" aria-label="Imagem 3"></button>
+        <button class="indicador" aria-label="Imagem 4"></button>
+    </div>
+</section>
+
+    <main id="inicio">
+       
+        <!-- SEÇÃO: PREFEITOS DE CAJARI -->
+        <section class="secao-prefeitos">
+
+            <!-- Apresentação da seção -->
+            <div class="introducao-prefeitos">
+
+                <div class="icone-prefeitos" aria-hidden="true">
+                    👥
+                </div>
+
+                <div class="texto-introducao-prefeitos">
+                    <h1>Prefeitos de Cajari</h1>
+
+                    <p>
+                        <strong>Conheça</strong> a trajetória de todos os gestores
+                        que contribuíram para a história do nosso município.
+                        Cada prefeito deixou sua marca no desenvolvimento de Cajari,
+                        e suas histórias fazem parte da nossa memória coletiva.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Grade de prefeitos -->
+            <div class="grade-prefeitos">
+
+                <!-- Prefeito 1 -->
+                <article class="cartao-prefeito">
+                    <img src="img/benedito-furtado.jpg"
+                        alt="Retrato de Benedito Furtado da Silva">
+
+                    <div class="dados-prefeito">
+                        <h2>Benedito Furtado da Silva</h2>
+                        <p>Prefeito de Cajari</p>
+                        <span class="periodo-prefeito">1949</span>
+
+                        <a href="biografias/benedito-furtado.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Prefeito 2 -->
+                <article class="cartao-prefeito">
+                    <img src="img/manoel-clodomir.jpg"
+                        alt="Retrato de Manoel Clodomir Serejo">
+
+                    <div class="dados-prefeito">
+                        <h2>Manoel Clodomir Serejo</h2>
+                        <p>Prefeito de Cajari</p>
+                        <span class="periodo-prefeito">1950</span>
+
+                        <a href="biografias/manoel-clodomir.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Prefeito 3 -->
+                <article class="cartao-prefeito">
+                    <img src="img/pedro-maranhao.jpg"
+                        alt="Retrato de Pedro Maranhão">
+
+                    <div class="dados-prefeito">
+                        <h2>Pedro Maranhão</h2>
+                        <p>Prefeito de Cajari</p>
+                        <span class="periodo-prefeito">1954</span>
+
+                        <a href="biografias/pedro-maranhao.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Prefeito 4 -->
+                <article class="cartao-prefeito">
+                    <img src="img/nilo-pereira-rego.jpg"
+                        alt="Retrato de Nilo Pereira Rêgo">
+
+                    <div class="dados-prefeito">
+                        <h2>Nilo Pereira Rêgo</h2>
+                        <p>Prefeito de Cajari</p>
+                        <span class="periodo-prefeito">1955–1959</span>
+
+                        <a href="biografias/nilo-pereira-rego.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Prefeito 5 -->
+                <article class="cartao-prefeito">
+                    <img src="img/joaquim-ferreira-rocha.jpg"
+                        alt="Retrato de Joaquim Ferreira Rocha">
+
+                    <div class="dados-prefeito">
+                        <h2>Joaquim Ferreira Rocha</h2>
+                        <p>Prefeito de Cajari</p>
+                        <span class="periodo-prefeito">1960</span>
+
+                        <a href="biografias/joaquim-ferreira-rocha.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Prefeito 6 -->
+                <article class="cartao-prefeito">
+                    <img src="img/luis-carlos-oliveira-sousa.jpg"
+                        alt="Retrato de Luis Carlos Oliveira Sousa">
+
+                    <div class="dados-prefeito">
+                        <h2>Luis Carlos Oliveira Sousa</h2>
+                        <p>Prefeito de Cajari</p>
+                        <span class="periodo-prefeito">1964</span>
+
+                        <a href="biografias/luis-carlos-oliveira-sousa.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Prefeito 7 -->
+                <article class="cartao-prefeito">
+                    <img src="img/nilo-rego.jpg"
+                        alt="Retrato de Nilo Rêgo">
+
+                    <div class="dados-prefeito">
+                        <h2>Nilo Rêgo</h2>
+                        <p>Prefeito de Cajari</p>
+                        <span class="periodo-prefeito">1965</span>
+
+                        <a href="biografias/nilo-rego.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Prefeito 8 -->
+                <article class="cartao-prefeito">
+                    <img src="img/nilo-pereira-rego.jpg"
+                        alt="Retrato de Nilo Pereira Rêgo">
+
+                    <div class="dados-prefeito">
+                        <h2>Nilo Pereira Rêgo</h2>
+                        <p>Prefeito de Cajari</p>
+                        <span class="periodo-prefeito">1966</span>
+
+                        <a href="biografias/nilo-pereira-rego-1966.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Prefeito 9 -->
+                <article class="cartao-prefeito">
+                    <img src="img/antonio-barros-serra.jpg"
+                        alt="Retrato de Antônio Barros Serra">
+
+                    <div class="dados-prefeito">
+                        <h2>Antônio Barros Serra</h2>
+                        <p>Prefeito de Cajari</p>
+                        <span class="periodo-prefeito">1969</span>
+
+                        <a href="biografias/antonio-barros-serra.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Prefeito 10 -->
+                <article class="cartao-prefeito">
+                    <img src="img/newton-pereira-rego.jpg"
+                        alt="Retrato de Newton Pereira Rêgo">
+
+                    <div class="dados-prefeito">
+                        <h2>Newton Pereira Rêgo</h2>
+                        <p>Prefeito de Cajari</p>
+                        <span class="periodo-prefeito">1972</span>
+
+                        <a href="biografias/newton-pereira-rego.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Prefeito 11 -->
+                <article class="cartao-prefeito">
+                    <img src="img/quincio-pinto-muniz.jpg"
+                        alt="Retrato de Quíncio Pinto Muniz">
+
+                    <div class="dados-prefeito">
+                        <h2>Quíncio Pinto Muniz</h2>
+                        <p>Prefeito de Cajari</p>
+                        <span class="periodo-prefeito">1976</span>
+
+                        <a href="biografias/quincio-pinto-muniz.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Prefeito 12 -->
+                <article class="cartao-prefeito">
+                    <img src="img/domingos-nascimento-almeida.jpg"
+                        alt="Retrato de Domingos do Nascimento Almeida">
+
+                    <div class="dados-prefeito">
+                        <h2>Domingos do Nascimento Almeida</h2>
+                        <p>Prefeito de Cajari</p>
+                        <span class="periodo-prefeito">1982</span>
+
+                        <a href="biografias/domingos-nascimento-almeida.html">
+                            Ver biografia <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+    <script src=" js/menu.js"></script>
+    
+    <script src="js/carrossel.js"></script>
+    
+<footer class="rodape">
+    <div class="rodape-container">
+
+        <div class="rodape-titulo">
+            <h2>Apoiadores do Projeto:</h2>
+        </div>
+
+        <div class="lista-apoiadores">
+
+            <!-- Apoiador 1 -->
+            <div class="apoiador">
+                <img src="img/logo-prefeitura.png"
+                     alt="Logo da Prefeitura">
+                <span>Prefeitura Municipal</span>
+            </div>
+
+            <!-- Apoiador 2 -->
+            <div class="apoiador">
+                <img src="img/logo-instituicao.png"
+                     alt="Logo da instituição">
+                <span>Nome da Instituição</span>
+            </div>
+
+            <!-- Apoiador 3 -->
+            <div class="apoiador">
+                <img src="img/logo-empresa.png"
+                     alt="Logo da empresa">
+                <span>Nome da Empresa</span>
+            </div>
+
+        </div>
+    
+            <div class="rodape-titulo">
+            <p style="text-align: center;">
+                A eletiva de base <strong>"No meu tempo..."</strong> agradece a todos os colaboradores e apoiadores desse projeto que é de todos os cajarienses.
+            </p>
+        </div>
+
+        <div class="rodape-creditos">
+            <p style="text-align: center;">
+                © 2026 SITE CAJARI — Todos os direitos reservados.
+            </p>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>

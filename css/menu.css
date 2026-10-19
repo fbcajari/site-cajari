@@ -1,0 +1,225 @@
+
+/* ==================================
+   NAVBAR — SITE CAJARI
+   ================================== */
+
+.navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #214ed5;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.navbar * {
+    box-sizing: border-box;
+}
+
+/* CONTAINER INTERNO */
+
+.navbar .menu-container {
+    width: 100%;
+    min-height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MENU HORIZONTAL CENTRALIZADO */
+
+.navbar .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+/* LINKS E BOTÕES */
+
+.navbar .menu-link,
+.navbar .submenu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    min-height: 54px;
+    padding: 0 20px;
+
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: normal;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    width: auto;
+}
+
+.navbar .menu-link:hover,
+.navbar .submenu-toggle:hover,
+.navbar .menu-link:focus-visible,
+.navbar .submenu-toggle:focus-visible {
+    background-color: #173ba8;
+    color: #ffffff;
+    outline-offset: -3px;
+}
+
+/* ITENS COM SUBMENU */
+
+.navbar .menu-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* SUBMENU DESKTOP */
+
+.navbar .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 200px;
+    padding: 5px 0;
+
+    background-color: #214ed5;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 5px 5px;
+    z-index: 1001;
+}
+
+.navbar .menu-item.aberto > .submenu {
+    display: block;
+}
+
+.navbar .submenu a {
+    display: block;
+    padding: 12px 16px;
+
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.4;
+    text-decoration: none;
+    white-space: normal;
+}
+
+.navbar .submenu a:hover,
+.navbar .submenu a:focus-visible {
+    background-color: #173ba8;
+    color: #ffffff;
+}
+
+/* BOTÃO HAMBÚRGUER: OCULTO NO DESKTOP */
+
+.navbar .menu-toggle {
+    display: none;
+}
+
+/* ==================================
+   CELULARES
+   ================================== */
+
+@media (max-width: 700px) {
+
+    .navbar .menu-container {
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* BOTÃO HAMBÚRGUER */
+
+    .navbar .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        width: 100%;
+        min-height: 48px;
+        padding: 10px 16px;
+
+        border: none;
+        border-radius: 0;
+        background-color: #214ed5;
+        color: #ffffff;
+
+        font-family: inherit;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .navbar .menu-toggle:hover {
+        background-color: #173ba8;
+    }
+
+    .navbar .icone-menu {
+        font-size: 23px;
+        line-height: 1;
+    }
+
+    /* MENU FECHADO POR PADRÃO */
+
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        width: 100%;
+    }
+
+    .navbar .menu.menu-aberto {
+        display: flex;
+    }
+
+    .navbar .menu-link,
+    .navbar .submenu-toggle {
+        width: 100%;
+        min-height: 44px;
+        justify-content: space-between;
+        padding: 12px 18px;
+        text-align: left;
+        white-space: normal;
+    }
+
+    .navbar .menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    /* SUBMENUS NO FLUXO DO MENU */
+
+    .navbar .submenu {
+        display: none;
+        position: static;
+        width: 100%;
+        min-width: 0;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
+        background-color: #193ca7;
+    }
+
+    .navbar .menu-item.aberto > .submenu {
+        display: block;
+    }
+
+    .navbar .submenu a {
+        padding: 12px 18px 12px 32px;
+        font-size: 13px;
+    }
+}
