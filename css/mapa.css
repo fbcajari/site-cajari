@@ -1,0 +1,21 @@
+
+.mapa-localidades {
+    width: 100%;
+    height: 650px;
+    margin: 25px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.mapa-localidades iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .mapa-localidades {
+        height: 480px;
+    }
+}
