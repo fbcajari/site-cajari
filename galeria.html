@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAJARI</title>
+    <link rel="shortcut icon" href="images/ampulheta-no-meu-tempo-32x32.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/carrossel.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/galeria.css">
+
+</head>
+
+<body>
+
+<nav class="navbar" aria-label="Menu principal">
+    <div class="menu-container">
+        <!-- Botão para celular -->
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="menu-principal">
+            <span class="icone-menu">&#9776;</span>
+            <span class="texto-menu">Menu</span>
+        </button>
+        <!-- Itens do menu -->
+        <div class="menu" id="menu-principal">
+            <a href="index.html" class="menu-link">Início</a>
+            <div class="menu-item">
+                <button class="submenu-toggle"
+                        type="button"
+                        aria-expanded="false">
+                    Sobre Cajari <span class="seta">▾</span>
+                </button>
+                <div class="submenu">
+                    <a href="historico.html">Histórico</a>
+                    <a href="ata-de-instalacao.html">Ata de Instalação</a>
+                    <a href="formacao-administrativa.html">Formação Administrativa</a>
+                    <a href="perfil-ibge.html">Perfil do Município IBGE</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <button class="submenu-toggle"
+                        type="button"
+                        aria-expanded="false">
+                    Personalidades <span class="seta">▾</span>
+                </button>
+                <div class="submenu">
+                    <a href="solenidade.html">Solenidade</a>
+                    <a href="prefeitos.html">Prefeitos</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <button class="submenu-toggle"
+                        type="button"
+                        aria-expanded="false">
+                    Lendas <span class="seta">▾</span>
+                </button>
+                <div class="submenu">
+                    <a href="lenda-maracu.html">A lenda do Rio Maracú</a>
+                    <a href="lenda-baiano.html">A lenda do Igarapé do Baiano</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <button class="submenu-toggle"
+                        type="button"
+                        aria-expanded="false">
+                    Sobre a eletiva <span class="seta">▾</span>
+                </button>
+                <div class="submenu">
+                    <a href="ementa.html">Ementa</a>
+                    <a href="projeto.html">Projeto</a>
+                </div>
+            </div>
+            <a href="desenvolvedores.html" class="menu-link">Desenvolvedores</a>
+        </div>
+    </div>
+</nav>
+
+<section class="carrossel" aria-label="Galeria de Cajari">
+    <div class="slide ativo">
+        <img src="images/carrossel-cajari/no-meu-tempo-1600x600.webp"
+             alt="Arte conceitual da eletiva No meu tempo">
+    </div>
+    <div class="slide">
+        <img src="images/carrossel-cajari/camisa-no-meu-tempo-full.webp"
+             alt="Camisa temática da eletiva No meu tempo">
+    </div>
+    <div class="slide">
+        <img src="images/carrossel-cajari/cais-cajari.webp"
+             alt="Imagem do cais de Cajari na segunda gestão de Nascimento Almeida">
+    </div>
+    <div class="slide">
+        <img src="images/carrossel-cajari/pm-cajari.webp"
+             alt="Imagem do cais de Cajari na segunda gestão de Bento Sousa">
+    </div>
+    <div class="slide">
+        <img src="images/carrossel-cajari/cajari-pb.webp"
+             alt="Imagem do cais de Cajari Barro Vermelho">
+    </div>
+    <button class="controle anterior"
+            type="button"
+            aria-label="Imagem anterior">&#10094;
+    </button>
+    <button class="controle proximo"
+            type="button"
+            aria-label="Próxima imagem">&#10095;
+    </button>
+    <div class="indicadores" aria-label="Escolher imagem">
+        <button class="indicador ativo" aria-label="Imagem 1"></button>
+        <button class="indicador" aria-label="Imagem 2"></button>
+        <button class="indicador" aria-label="Imagem 3"></button>
+        <button class="indicador" aria-label="Imagem 4"></button>
+        <button class="indicador" aria-label="Imagem 5"></button>
+    </div>
+</section>
+
+    <main id="inicio">
+
+        <section class="galeria-historica" id="galeria">
+            <div class="galeria-cabecalho">
+                <h2>Galeria Histórica de Cajari</h2>
+                <p>
+                    Fotografias, lembranças e registros que preservam
+                    a história e a memória do nosso município.
+                </p>
+            </div>
+
+            <div class="galeria-grade">
+
+                <button class="galeria-item"
+                        type="button"
+                        data-imagem="images/galeria/barragem.jpg"
+                        data-titulo="Título da imagem em destaque"
+                        data-descricao="Descrição da imagem">
+                    <img src="images/galeria/barragem.jpg"
+                        alt="Registro histórico de Cajari"
+                        loading="lazy">
+                    <span class="galeria-legenda">As datas das imagens são uma estimativa, não uma verdade absoluta.</span>
+                </button>
+
+                <button class="galeria-item"
+                        type="button"
+                        data-imagem="images/galeria/igreja.jpg"
+                        data-titulo="Cajari de outros tempos"
+                        data-descricao="Uma lembrança do passado do município.">
+                    <img src="images/galeria/igreja.jpg"
+                        alt="Fotografia antiga de Cajari"
+                        loading="lazy">
+                    <span class="galeria-legenda">Cajari de outros tempos</span>
+                </button>
+
+                <button class="galeria-item"
+                        type="button"
+                        data-imagem="images/galeria/primavera.jpg"
+                        data-titulo="Nossa história"
+                        data-descricao="Um registro da memória local.">
+                    <img src="images/galeria/primavera.jpg"
+                        alt="Fotografia da memória local"
+                        loading="lazy">
+                    <span class="galeria-legenda">Nossa história</span>
+                </button>
+
+            </div>
+        </section>
+
+        <!-- Janela de visualização ampliada -->
+        <div class="galeria-modal"
+            id="galeria-modal"
+            aria-hidden="true"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Fotografia ampliada">
+
+            <button class="galeria-fechar"
+                    type="button"
+                    aria-label="Fechar fotografia">&times;</button>
+
+            <button class="galeria-navegar galeria-voltar"
+                    type="button"
+                    aria-label="Fotografia anterior">&#10094;</button>
+
+            <figure class="galeria-figura">
+                <img id="galeria-imagem-ampliada" src="" alt="">
+                <figcaption>
+                    <h3 id="galeria-titulo-ampliado"></h3>
+                    <p id="galeria-descricao-ampliada"></p>
+                    <span id="galeria-contador"></span>
+                </figcaption>
+            </figure>
+
+            <button class="galeria-navegar galeria-avancar"
+                    type="button"
+                    aria-label="Próxima fotografia">&#10095;</button>
+        </div>
+    </main>
+    <script src="js/menu.js"></script>
+    <script src="js/galeria.js"></script>
+    <script src="js/carrossel.js"></script>
+    
+<footer class="rodape">
+    <div class="rodape-container">
+
+        <div class="rodape-titulo">
+            <h2>Apoiadores do Projeto:</h2>
+        </div>
+
+        <div class="lista-apoiadores">
+
+            <!-- Dr. Rodrigo Ferreira -->
+            <div class="apoiador">
+                <a href="" target="_blank">
+                    <img src="images/apoiadores/avatar.svg"
+                         alt="Dr. Rodrigo Ferreira">
+                    <span>Dr. Rodrigo Ferreira</span>
+                </a>
+            </div>
+
+            <!-- Malharia IZA -->
+            <div class="apoiador">
+                <a href="https://www.instagram.com/malhariaiza?dlrf=Z2V5OXFna3gwcmN6" target="_blank">
+                    <img src="images/apoiadores/malharia-iza.webp"
+                         alt="Malharia Iza">
+                    <span>Malharia IZA</span>
+                </a>
+            </div>
+
+            <!-- Coonstâncio Souza -->
+            <div class="apoiador">
+                <a href="https://www.instagram.com/constanciosouzaa?obrf=NGxwNDd5YzVubHU2&utm_source=qr" target="_blank">
+                    <img src="images/apoiadores/constancio-souza.webp"
+                         alt="Constâncio Souza">
+                    <span>Constâncio Souza</span>
+                </a>
+            </div>
+
+            <!-- Bento Souza -->
+            <div class="apoiador">
+                <a href="https://www.instagram.com/prefeituracajari?psln=c3oxeGZlMzYyZ3pj&utm_source=qr" target="_blank">
+                    <img src="images/apoiadores/bento-souza-prefeito.webp"
+                         alt="Bento Souza">
+                    <span>Sec. Gov. Bento SOuza</span>
+                </a>
+            </div>
+
+            <!-- Osmar Filho -->
+            <div class="apoiador">
+                <a href="" target="_blank">
+                    <img src="images/apoiadores/osmar-filho.webp"
+                         alt="Osmar Filho">
+                    <span>Osmar Filho</span>
+                </a>
+            </div>
+
+            <!-- Mariana Anchieta -->
+            <div class="apoiador">
+                <a href="" target="_blank">
+                    <img src="images/apoiadores/avatar.svg"
+                         alt="Mariana Anchieta">
+                    <span>Mariana Anchieta</span>
+                </a>
+            </div>
+
+            <!-- Marieuton -->
+            <div class="apoiador">
+                <a href="" target="_blank">
+                    <img src="images/apoiadores/avatar.svg"
+                         alt="Marieuton">
+                    <span>Marieuton</span>
+                </a>
+            </div>
+
+        </div>
+    
+            <div class="rodape-titulo">
+            <p style="text-align: center;">
+                A eletiva de base <strong>"No meu tempo..."</strong> agradece a todos os colaboradores e apoiadores desse projeto que é de todos os cajarienses.
+            </p>
+        </div>
+
+        <div class="rodape-creditos">
+            <p style="text-align: center;">
+                © 2026 SITE CAJARI — Todos os direitos reservados.
+            </p>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>

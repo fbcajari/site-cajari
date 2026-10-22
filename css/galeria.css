@@ -1,0 +1,218 @@
+
+/* =====================================
+   GALERIA HISTÓRICA — SITE CAJARI
+===================================== */
+
+.galeria-historica {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.galeria-historica .galeria-cabecalho {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.galeria-historica .galeria-cabecalho h2 {
+    margin: 0 0 12px;
+    color: #263b80;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+.galeria-historica .galeria-cabecalho p {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #555;
+    line-height: 1.6;
+}
+
+.galeria-historica .galeria-grade {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.galeria-historica .galeria-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background: #fff;
+    text-align: left;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.galeria-historica .galeria-item:hover {
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+.galeria-historica .galeria-item:focus-visible {
+    outline: 3px solid #4169e1;
+    outline-offset: 3px;
+}
+
+.galeria-historica .galeria-item img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.galeria-historica .galeria-legenda {
+    display: block;
+    padding: 12px;
+    color: #263b80;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* =====================================
+   VISUALIZAÇÃO AMPLIADA
+===================================== */
+
+.galeria-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    padding: 65px 25px 25px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.94);
+}
+
+.galeria-modal.aberta {
+    display: flex;
+}
+
+.galeria-modal .galeria-fechar {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 42px;
+    cursor: pointer;
+}
+
+.galeria-modal .galeria-figura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    margin: 0;
+}
+
+.galeria-modal #galeria-imagem-ampliada {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: contain;
+}
+
+.galeria-modal figcaption {
+    flex-shrink: 0;
+    max-width: 800px;
+    padding: 12px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.galeria-modal figcaption h3 {
+    margin: 0 0 5px;
+    font-size: 1.1rem;
+}
+
+.galeria-modal figcaption p {
+    margin: 0 0 6px;
+    color: #ddd;
+}
+
+.galeria-modal #galeria-contador {
+    color: #bbb;
+    font-size: 0.85rem;
+}
+
+.galeria-modal .galeria-navegar {
+    flex-shrink: 0;
+    width: 44px;
+    height: 55px;
+    border: 0;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.galeria-modal .galeria-navegar:hover,
+.galeria-modal .galeria-fechar:hover {
+    color: #a9c5ff;
+}
+
+body.galeria-modal-aberta {
+    overflow: hidden;
+}
+
+/* =====================================
+   RESPONSIVIDADE
+===================================== */
+
+@media (max-width: 850px) {
+    .galeria-historica .galeria-grade {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .galeria-historica .galeria-item img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 520px) {
+    .galeria-historica {
+        padding: 15px;
+    }
+
+    .galeria-historica .galeria-grade {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .galeria-historica .galeria-item img {
+        height: 230px;
+    }
+
+    .galeria-modal {
+        gap: 7px;
+        padding: 60px 8px 12px;
+    }
+
+    .galeria-modal .galeria-navegar {
+        width: 34px;
+        height: 44px;
+        font-size: 20px;
+    }
+
+    .galeria-modal .galeria-fechar {
+        right: 15px;
+    }
+}
