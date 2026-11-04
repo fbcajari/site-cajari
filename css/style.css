@@ -319,3 +319,18 @@ body > footer.rodape {
     height: 100%;
     object-fit: contain;
 }
+
+/* Impede a seleção de textos no site */
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Permite selecionar textos em campos de formulário */
+input,
+textarea {
+    -webkit-user-select: text;
+    user-select: text;
+}
